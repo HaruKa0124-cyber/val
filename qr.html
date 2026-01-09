@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentine QR</title>
+</head>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;">
+  <div id="qrcode"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://my-valentine.vercel.app",
+      width: 220,
+      height: 220,
+    });
+  </script>
+</body>
+</html>
